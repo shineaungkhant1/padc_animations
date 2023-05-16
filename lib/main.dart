@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:padc_animations/implicit_animations/implicit_animations.dart';
 
+import 'implicit_animations/rotate.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ImplicitAnimations(),
+      home: const RotatingWidget(),
     );
   }
 }

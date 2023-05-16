@@ -41,7 +41,7 @@ class _ImplicitAnimationsState extends State<ImplicitAnimations> {
                         AnimatedContainer(
                           width: (isNewDimensions) ? 350 : 250,
                           height: (isNewDimensions) ? 300 : 200,
-                          curve: Curves.easeInOutSine,
+                          curve: Curves.easeInCubic,
                           duration: kAnimationDuration,
                           child: Image.asset(
                             "assets/bird_image.png",
