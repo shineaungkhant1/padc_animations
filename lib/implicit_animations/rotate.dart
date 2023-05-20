@@ -5,10 +5,10 @@ class RotatingWidget extends StatefulWidget {
   const RotatingWidget({super.key});
 
   @override
-  _RotatingWidgetState createState() => _RotatingWidgetState();
+  RotatingWidgetState createState() => RotatingWidgetState();
 }
 
-class _RotatingWidgetState extends State<RotatingWidget>
+class RotatingWidgetState extends State<RotatingWidget>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
@@ -17,7 +17,7 @@ class _RotatingWidgetState extends State<RotatingWidget>
   void initState() {
     super.initState();
     _controller = AnimationController(
-      duration: Duration(seconds: 2),
+      duration: const Duration(seconds: 2),
       vsync: this,
     );
 
